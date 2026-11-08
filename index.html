@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#101a27">
+  <title>Wilderkin — The Shattered Wilds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game-shell" aria-label="Wilderkin monster-taming adventure">
+    <canvas id="game" width="960" height="540" aria-label="Game screen"></canvas>
+    <div id="toast" aria-live="polite"></div>
+    <div id="touch-controls" aria-label="Touch controls">
+      <div class="dpad"><button data-key="left" aria-label="Move left">◀</button><button data-key="right" aria-label="Move right">▶</button></div>
+      <div class="touch-actions"><button data-key="jump">JUMP</button><button data-key="interact">ACT</button></div>
+    </div>
+    <div class="screen-reader" id="announcer" aria-live="polite"></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
